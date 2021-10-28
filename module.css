@@ -1,0 +1,33 @@
+.ui-widget-overlay {
+    z-index: 9998 !important;
+}
+
+.ui-dialog {
+    border: 1px double black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px rgb(0 0 0 / 20%);
+    background-color: white;
+    z-index: 9999;
+}
+
+.ui-dialog-titlebar {
+    background-color: #298ac4;
+    vertical-align: middle;
+    height: 30px;
+}
+
+.ui-dialog-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+}
+
+.KeepAlive_dialog-content {
+    overflow: hidden;
+}
+
+.KeepAlive_body_padding {
+    padding: 20px;
+    margin: 0px;
+}
