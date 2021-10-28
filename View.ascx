@@ -32,8 +32,8 @@
     var alertTimeoutTimer = 0;
     var remainingTimer = 0;
     if (<%= IsLoggedIn %>) {
-        sessionTimeoutTimer = setTimeout(function () { SessionTimeout(); }, <%= TimeOut %> * 60000);
-        alertTimeoutTimer = setTimeout(function () { AlertSessionTimeout(); }, (<%= TimeOut %> - 5) * 60000);
+        sessionTimeoutTimer = setTimeout(function () { SessionTimeout(); }, <%= TimeOut %> * 1000);
+        alertTimeoutTimer = setTimeout(function () { AlertSessionTimeout(); }, (<%= TimeOut %> - 5) * 1000);
     }
     $(document).ajaxStop(EndRequest);
     function EndRequest() {
@@ -41,8 +41,8 @@
         clearTimeout(alertTimeoutTimer);
         HideAlertWindow();
         if (<%= IsLoggedIn %>) {
-            sessionTimeoutTimer = setTimeout(function () { SessionTimeout(); }, <%= TimeOut %> * 60000);
-            alertTimeoutTimer = setTimeout(function () { AlertSessionTimeout(); }, (<%= TimeOut %> - 5) * 60000);
+            sessionTimeoutTimer = setTimeout(function () { SessionTimeout(); }, <%= TimeOut %> * 1000);
+            alertTimeoutTimer = setTimeout(function () { AlertSessionTimeout(); }, (<%= TimeOut %> - 5) * 1000);
         }
     }
     function SessionTimeout() {

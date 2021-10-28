@@ -39,7 +39,8 @@ namespace Gafware.Modules.KeepAlive
         {
             get
             {
-                return (Config.GetSetting("PersistentCookieTimeout") != null ? int.Parse(Config.GetSetting("PersistentCookieTimeout")) : 30);
+                return (int)FormsAuthentication.Timeout.TotalMinutes;
+                //return (Config.GetSetting("PersistentCookieTimeout") != null ? int.Parse(Config.GetSetting("PersistentCookieTimeout")) : 30);
             }
         }
 
