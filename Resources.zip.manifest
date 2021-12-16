@@ -1,16 +1,16 @@
 ﻿<dotnetnuke type="ResourceFile" version="5.0">
   <files>
     <file>
-      <path>Images/</path>
-      <name>keepalive.png</name>
-    </file>
-    <file>
       <path>Documentation/</path>
       <name>Documentation.css</name>
     </file>
     <file>
       <path>Documentation/</path>
       <name>Documentation.html</name>
+    </file>
+    <file>
+      <path>Images/</path>
+      <name>keepalive.png</name>
     </file>
     <file>
       <path>App_LocalResources/</path>
